@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Myself</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Jitendra</span><br> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam numquam ullam quidem officia,
+                        reiciendis aliquid libero. Possimus temporibus eaque blanditiis mollitia libero dolorem a
+                        pariatur? Non, odit dolorum. Laborum consectetur atque in aliquam beatae? Doloribus,
+                        reprehenderit odit et architecto eveniet accusantium excepturi, </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li>
+                                <span>UI/UX</span><br>Designing Web/App interfaces
+                            </li>
+                            <li>
+                                <span>Web Development</span><br>web App Development
+                            </li>
+                            <li>
+                                <span>App Development</span><br>Building Andriod/Ios Apps
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li>
+                                <span>2023-current</span><br>Web Development
+                            </li>
+                            <li>
+                                <span>2019-2020</span><br>Lead Team at startup LLC.
+                            </li>
+                            <li>
+                                <span>App Development</span><br>Building Andriod/Ios Apps
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li>
+                                <span>2023</span><br>MIT ADT SOC
+                            </li>
+                            <li>
+                                <span>2020-2022</span><br>Nowrodjee Wadia Collage
+                            </li> 
+                            <li>
+                                <span>2019</span><br>St Joesph's Convent School
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+    };
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+    };
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    
+
+}
+
+
+
+</script>
+</body>
+
+</html>
