@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Myself</title>
     <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/31e71aafbe.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -78,7 +79,7 @@
                             </li>
                             <li>
                                 <span>2020-2022</span><br>Nowrodjee Wadia Collage
-                            </li> 
+                            </li>
                             <li>
                                 <span>2019</span><br>St Joesph's Convent School
                         </ul>
@@ -87,25 +88,55 @@
             </div>
         </div>
     </div>
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link")
-    };
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab")
-    };
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab");
-    
+    <!-- -----service----- -->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code-compare"></i>
+                    <h2> Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi obcaecati animi explicabo
+                        delectus eveniet autem</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2> UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi obcaecati animi explicabo
+                        , electus eveniet autem?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2> App Development</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi obcaecati animi explicabo
+                        , delectus eveniet autem?</p>
+                    <a href="#">Learn More</a>
+                </div>
 
-}
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            };
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            };
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+
+        }
 
 
 
-</script>
+    </script>
 </body>
 
 </html>
